@@ -4,7 +4,7 @@ OUT = $(SRC:.tex=.pdf)
 
 all: $(OUT)
 
-%.pdf: %.tex cv.bib functions.tex
+%.pdf: %.tex functions.tex
 	xelatex $<
 	bibtex $*
 	xelatex $<
